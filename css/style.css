@@ -1,0 +1,140 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    background: linear-gradient(120deg, #2980b9, #8e44ad);;
+    padding: 0;
+    margin: 0;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.input-buku {
+    text-align: center;
+}
+
+.form-input-title {
+    color: red;
+}
+
+button {
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    background: white;
+}
+
+input {
+    background: white;
+    color: black;
+}
+
+.daftar-buku {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    flex-direction: row;
+}
+
+#buku-sudah-dibaca {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#buku-belum-dibaca {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#search-input {
+    text-align: center;
+}
+
+#list-belum-dibaca {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 50px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    background: rgba(0, 0, 255, 0.3);
+}
+
+#list-sudah-dibaca {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: green;
+    background: rgba(11, 156, 49, 0.5)
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.fa-xmark {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fa-xmark:hover,
+.fa-xmark:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

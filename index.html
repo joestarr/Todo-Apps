@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookshelf Apps</title>
+    <script src="https://kit.fontawesome.com/99c8073d34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="jumbotron">
+        <h1>Bookshelf Apps</h1>
+        <p>Read your favorite Book!</p>
+    </div>
+</header>
+
+<main>
+    <div id="content">
+        <div class="input-buku">
+            <form class="form-input" action="#" id="form">
+                <h1>Masukkan Buku Baru</h1>
+                <div class="form-input-title">
+                    <h3>Judul</h3>
+                    <input type="text" id="title" name="title" placeholder="Judul buku.." required>
+                </div>
+                <div class="form-input-penulis">
+                    <h3>Penulis</h3>
+                    <input id="penulis" type="text" name="penulis" placeholder="Penulis buku.." required>
+                </div>
+                <div class="form-input-tahun">
+                    <h3>Tahun</h3>
+                    <input id="tahun" type="text" name="tahun" placeholder="Tahun buku.." required>
+                </div>
+                <div>
+                    <br>
+                    <label for="checkbox-book">Selesai dibaca</label>
+                    <input id="checkbox-book" type="checkbox">
+                </div>
+                <br>
+                <input id="submit" type="submit" value="SUBMIT"></input>
+            </form>
+        </div>
+        <br>
+        <form id="search-input">
+            <h2>Cari Buku</h2>
+            <input type="text" id="search">
+            <input id="submitSearch" type="submit" value="CARI">
+        </form>
+        <br><br>
+        <div class="daftar-buku">
+            <div id="list-belum-dibaca">
+                <h2>Buku Belum Dibaca</h2>
+                <div class="list-item" id="buku-belum-dibaca">
+
+                </div>
+            </div>
+            <div id="list-sudah-dibaca">
+                <h2>Buku Sudah Dibaca</h2>
+                <div class="list-item" id="buku-sudah-dibaca">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/data.js" type="text/javascript"></script>
+<script src="js/dom.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
